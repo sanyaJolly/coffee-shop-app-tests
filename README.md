@@ -1,4 +1,4 @@
-# React Native Coffee Shop A
+# React Native Coffee Shop App
 ![collage](https://github.com/mxnuchim/Coffee-Shop-App-React-Native/assets/55309494/a37429bd-9028-47b7-b548-a8ed14bf165b)
 
 
