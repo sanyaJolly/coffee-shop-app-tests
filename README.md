@@ -1,8 +1,11 @@
 # React Native Coffee Shop App
-![collage](https://github.com/mxnuchim/Coffee-Shop-App-React-Native/assets/55309494/a37429bd-9028-47b7-b548-a8ed14bf165b)
 
 
-### Figma Design Link -> View complete figma design [Here]('https://www.figma.com/file/X6iFON9Z1zsADVbCI7hWUq/Coffee-Shop-App-UI-(Copy)?type=design&node-id=0%3A1&mode=design&t=CW8j4E78mf2PggDQ-1').
+![collage (1)](https://github.com/mxnuchim/Coffee-Shop-App-React-Native/assets/55309494/c0649d8e-3704-4507-a6e6-52d3ed8222db)
+
+
+
+### Figma Design Link : View the complete figma design [Here]('https://www.figma.com/file/X6iFON9Z1zsADVbCI7hWUq/Coffee-Shop-App-UI-(Copy)?type=design&node-id=0%3A1&mode=design&t=CW8j4E78mf2PggDQ-1').
 
 A mobile app built with React Native CLI that takes your coffee shop experience to the next level. Whether you're a coffee enthusiast or just starting your coffee journey, BrewNest has something special for everyone.
 
