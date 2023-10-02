@@ -1,84 +1,43 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# React Native Coffee Shop A
+![collage](https://github.com/mxnuchim/Coffee-Shop-App-React-Native/assets/55309494/a37429bd-9028-47b7-b548-a8ed14bf165b)
+pp
 
-# Getting Started
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+A mobile app built with React Native CLI that takes your coffee shop experience to the next level. Whether you're a coffee enthusiast or just starting your coffee journey, BrewNest has something special for everyone.
 
-## Step 1: Start the Metro Server
+## Key Features
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+- **Coffee Shop Locator:** Discover the best coffee shops nearby with ratings and reviews.
+- **Menu Browsing:** Explore coffee shop menus, complete with descriptions and images.
+- **Cart and Ordering:** Build your coffee order in the cart, customize it, and proceed to checkout.
+- **Saved Favorites:** Save your favorite coffee drinks for quick ordering.
+- **Order History:** Keep track of your previous orders for easy reordering.
+- **iOS Dependencies:** For iOS users, make sure to run `pod install` in the `ios` directory to install necessary dependencies.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+## Installation
 
-```bash
-# using npm
-npm start
+1. Clone the repository: `git clone https://github.com/mxnuchim/Coffee-Shop-App-React-Native.git`
+2. Navigate to the project directory: `cd BrewNest`
+3. Install dependencies: `npm install`
+4. For iOS, navigate to the `ios` directory and run `pod install` to install dependencies for iOS.
 
-# OR using Yarn
-yarn start
-```
+## Usage
 
-## Step 2: Start your Application
+- Start the app on an iOS or Android emulator or device: `npm run ios` or `npm run android`
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+## Contributing
 
-### For Android
+Contributions are welcome! Please read our [Contribution Guidelines](CONTRIBUTING.md) before submitting pull requests.
 
-```bash
-# using npm
-npm run android
+## License
 
-# OR using Yarn
-yarn android
-```
+This project is licensed under the [MIT License](LICENSE.md).
 
-### For iOS
+## Contact
 
-```bash
-# using npm
-npm run ios
+For questions or support, please contact [Your Name](mailto:manuchimoliver779@gmail.com).
 
-# OR using Yarn
-yarn ios
-```
+---
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+Savor your coffee shop experiences! ☕📱
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
-
-## Step 3: Modifying your App
-
-Now that you have successfully run the app, let's modify it.
-
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
-
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
-
-## Congratulations! :tada:
-
-You've successfully run and modified your React Native App. :partying_face:
-
-### Now what?
-
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
-
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
-# Coffee-Shop-App-React-Native
-# Coffee-Shop-App-React-Native
-# Coffee-Shop-App-React-Native
-# Coffee-Shop-App-React-Native
-# Coffee-Shop-App-React-Native
