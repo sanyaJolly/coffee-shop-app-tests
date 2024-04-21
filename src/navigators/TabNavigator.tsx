@@ -17,7 +17,7 @@ const TabNavigator = () => {
       screenOptions={{
         tabBarHideOnKeyboard: true,
         headerShown: false,
-        tabBarShowLabel: false,
+        tabBarShowLabel: true,
         tabBarStyle: styles.tabBarStyle,
         tabBarBackground: () => (
           <BlurView
@@ -48,6 +48,7 @@ const TabNavigator = () => {
           tabBarIcon: ({focused, color, size}) => (
             <CustomIcon
               name="cart"
+              testID="cartTabIcon"
               size={25}
               color={
                 focused ? COLORS.primaryOrangeHex : COLORS.primaryLightGreyHex
@@ -61,6 +62,7 @@ const TabNavigator = () => {
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <CustomIcon
+              testID='favouriteTabIcon'
               name="like"
               size={25}
               color={
@@ -75,6 +77,7 @@ const TabNavigator = () => {
         options={{
           tabBarIcon: ({focused, color, size}) => (
             <CustomIcon
+              testID='historyTabIcon'
               name="bell"
               size={25}
               color={

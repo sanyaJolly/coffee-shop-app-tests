@@ -26,16 +26,18 @@ interface CoffeeCardProps {
   index: number;
   type: string;
   roasted: string;
-  imagelink_square: ImageProps;
+  imagelink_square?: ImageProps;
   name: string;
   special_ingredient: string;
   average_rating: number;
   price: any;
   buttonPressHandler: any;
+  testID?: string;
 }
 
 const CoffeeCard: React.FC<CoffeeCardProps> = ({
   id,
+  testID,
   index,
   type,
   roasted,
@@ -48,6 +50,7 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
 }) => {
   return (
     <LinearGradient
+      testID={testID}
       start={{x: 0, y: 0}}
       end={{x: 1, y: 1}}
       style={styles.CardLinearGradientContainer}
@@ -72,6 +75,7 @@ const CoffeeCard: React.FC<CoffeeCardProps> = ({
           $ <Text style={styles.CardPrice}>{price.price}</Text>
         </Text>
         <TouchableOpacity
+          testID='plusButton'
           onPress={() => {
             buttonPressHandler({
               id,

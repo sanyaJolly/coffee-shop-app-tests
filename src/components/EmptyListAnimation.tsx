@@ -11,6 +11,7 @@ const EmptyListAnimation: React.FC<EmptyListAnimationProps> = ({title}) => {
   return (
     <View style={styles.EmptyCartContainer}>
       <LottieView
+        testID='emptyCartGIF'
         style={styles.LottieStyle}
         source={require('../lottie/coffeecup.json')}
         autoPlay

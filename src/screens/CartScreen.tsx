@@ -41,7 +41,8 @@ const CartScreen = ({navigation, route}: any) => {
     calculateCartPrice();
   };
   return (
-    <View style={styles.ScreenContainer}>
+    <View style={styles.ScreenContainer} 
+    testID='cartScreen'>
       <StatusBar backgroundColor={COLORS.primaryBlackHex} />
 
       <ScrollView
@@ -55,9 +56,11 @@ const CartScreen = ({navigation, route}: any) => {
             {CartList.length == 0 ? (
               <EmptyListAnimation title={'Cart is Empty'} />
             ) : (
-              <View style={styles.ListItemContainer}>
+              <View style={styles.ListItemContainer}
+               testID='cartList'>
                 {CartList.map((data: any) => (
                   <TouchableOpacity
+                    testID='cartItem'
                     onPress={() => {
                       navigation.push('Details', {
                         index: data.index,
@@ -67,6 +70,8 @@ const CartScreen = ({navigation, route}: any) => {
                     }}
                     key={data.id}>
                     <CartItem
+                      sizeTestID='size'
+                      priceTestID='price'
                       id={data.id}
                       name={data.name}
                       imagelink_square={data.imagelink_square}

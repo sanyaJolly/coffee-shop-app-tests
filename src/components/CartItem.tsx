@@ -27,6 +27,8 @@ interface CartItemProps {
   type: string;
   incrementCartItemQuantityHandler: any;
   decrementCartItemQuantityHandler: any;
+  sizeTestID?: string;
+  priceTestID?: string
 }
 
 const CartItem: React.FC<CartItemProps> = ({
@@ -39,6 +41,8 @@ const CartItem: React.FC<CartItemProps> = ({
   type,
   incrementCartItemQuantityHandler,
   decrementCartItemQuantityHandler,
+  sizeTestID,
+  priceTestID
 }) => {
   return (
     <View>
@@ -52,9 +56,9 @@ const CartItem: React.FC<CartItemProps> = ({
             <Image source={imagelink_square} style={styles.CartItemImage} />
             <View style={styles.CartItemInfo}>
               <View>
-                <Text style={styles.CartItemTitle}>{name}</Text>
+                <Text style={styles.CartItemTitle}>a {name}</Text>
                 <Text style={styles.CartItemSubtitle}>
-                  {special_ingredient}
+                  {special_ingredient} 
                 </Text>
               </View>
               <View style={styles.CartItemRoastedContainer}>
@@ -69,6 +73,8 @@ const CartItem: React.FC<CartItemProps> = ({
               <View style={styles.CartItemSizeValueContainer}>
                 <View style={styles.SizeBox}>
                   <Text
+                    testID={sizeTestID}
+
                     style={[
                       styles.SizeText,
                       {
@@ -76,12 +82,12 @@ const CartItem: React.FC<CartItemProps> = ({
                           type == 'Bean' ? FONTSIZE.size_12 : FONTSIZE.size_16,
                       },
                     ]}>
-                    {data.size}
+                    {data.size} 
                   </Text>
                 </View>
                 <Text style={styles.SizeCurrency}>
                   {data.currency}
-                  <Text style={styles.SizePrice}> {data.price}</Text>
+                  <Text testID={priceTestID} style={styles.SizePrice}> {data.price} </Text>
                 </Text>
               </View>
               <View style={styles.CartItemSizeValueContainer}>

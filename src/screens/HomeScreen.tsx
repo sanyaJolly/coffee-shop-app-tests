@@ -114,11 +114,6 @@ const HomeScreen = ({navigation}: any) => {
       prices,
     });
     calculateCartPrice();
-    ToastAndroid.showWithGravity(
-      `${name} is Added to Cart`,
-      ToastAndroid.SHORT,
-      ToastAndroid.CENTER,
-    );
   };
 
   return (
@@ -154,6 +149,7 @@ const HomeScreen = ({navigation}: any) => {
           </TouchableOpacity>
           <TextInput
             placeholder="Find Your Coffee..."
+            testID="searchBar"
             value={searchText}
             onChangeText={text => {
               setSearchText(text);
@@ -170,6 +166,7 @@ const HomeScreen = ({navigation}: any) => {
               <CustomIcon
                 style={styles.InputIcon}
                 name="close"
+                testID='crossButton'
                 size={FONTSIZE.size_16}
                 color={COLORS.primaryLightGreyHex}
               />
@@ -223,11 +220,14 @@ const HomeScreen = ({navigation}: any) => {
         {/* Coffee Flatlist */}
 
         <FlatList
+          testID='coffeeCardScroll'
           ref={ListRef}
           horizontal
           ListEmptyComponent={
             <View style={styles.EmptyListContainer}>
-              <Text style={styles.CategoryText}>No Coffee Available</Text>
+              <Text id= "noCoffeeAvailableOnHomescreen" style={styles.CategoryText}>No Coffee Available</Text>
+            
+            
             </View>
           }
           showsHorizontalScrollIndicator={false}
@@ -245,6 +245,7 @@ const HomeScreen = ({navigation}: any) => {
                   });
                 }}>
                 <CoffeeCard
+                  testID='coffeeCard' 
                   id={item.id}
                   index={item.index}
                   type={item.type}

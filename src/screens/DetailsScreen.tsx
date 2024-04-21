@@ -112,6 +112,7 @@ const DetailsScreen = ({navigation, route}: any) => {
           <View style={styles.SizeOuterContainer}>
             {ItemOfIndex.prices.map((data: any) => (
               <TouchableOpacity
+                testID='sizeBox'
                 key={data.size}
                 onPress={() => {
                   setPrice(data);
@@ -146,6 +147,7 @@ const DetailsScreen = ({navigation, route}: any) => {
           </View>
         </View>
         <PaymentFooter
+          testID='priceChange'
           price={price}
           buttonTitle="Add to Cart"
           buttonPressHandler={() => {

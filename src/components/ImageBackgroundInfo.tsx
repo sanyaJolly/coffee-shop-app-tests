@@ -56,6 +56,7 @@ const ImageBackgroundInfo: React.FC<ImageBackgroundInfoProps> = ({
         {EnableBackHandler ? (
           <View style={styles.ImageHeaderBarContainerWithBack}>
             <TouchableOpacity
+            testID='backButton'
               onPress={() => {
                 BackHandler();
               }}>

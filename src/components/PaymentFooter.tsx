@@ -17,22 +17,25 @@ interface PaymentFooterProps {
   price: PriceProps;
   buttonPressHandler: any;
   buttonTitle: string;
+  testID?: string
 }
 
 const PaymentFooter: React.FC<PaymentFooterProps> = ({
   price,
+  testID,
   buttonPressHandler,
   buttonTitle,
 }) => {
   return (
-    <View style={styles.PriceFooter}>
-      <View style={styles.PriceContainer}>
+    <View style={styles.PriceFooter} >
+      <View style={styles.PriceContainer} >
         <Text style={styles.PriceTitle}>Price</Text>
-        <Text style={styles.PriceText}>
-          {price.currency} <Text style={styles.Price}>{price.price}</Text>
+        <Text testID={testID} style={styles.PriceText}>
+          {price.currency} <Text  style={styles.Price}>{price.price}</Text>
         </Text>
       </View>
       <TouchableOpacity
+        testID= 'addToCart'
         style={styles.PayButton}
         onPress={() => buttonPressHandler()}>
         <Text style={styles.ButtonText}>{buttonTitle}</Text>
